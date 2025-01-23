@@ -5,11 +5,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 
+
+
 @Controller
 @RequestMapping("/hello")
 public class HelloController {
 
-    
+
 
     @RequestMapping("/index")
     public String index(){
@@ -21,6 +23,12 @@ public class HelloController {
     public String index2(){
         return "hello-world";
     }
+
+    @RequestMapping("/test")
+    public String test() {
+        return "test";
+    }
+    
 
     
 }
